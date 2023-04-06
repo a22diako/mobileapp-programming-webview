@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         WebView mywebview = findViewById(R.id.my_webview);
        mywebview.loadUrl("https://www.his.se");
+       //hugo e snygg 123
 
         /*
         * Rename your App. Tip: Values->Strings
