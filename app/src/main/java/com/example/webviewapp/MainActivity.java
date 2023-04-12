@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         myWebView.setWebViewClient(new WebViewClient()); // Do not open in Chrome!
 
-        /*
+        /*ba
         * Rename yourv App. Tip: Values->Strings
         * Enable Internet access for your App. Tip: Manifest
         * Create a WebView element in the layout file main_activity.xml
