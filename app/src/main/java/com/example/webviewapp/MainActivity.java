@@ -4,19 +4,21 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-
+    private WebView myWebView;
     public void showExternalWebPage(){
-        // TODO: Add your code for showing external web page here
+        myWebView.loadUrl("https://www.youtube.com/");
     }
 
     public void showInternalWebPage(){
-        // TODO: Add your code for showing internal web page here
+        myWebView.loadUrl("inl2.html");
     }
 
     @Override
@@ -26,9 +28,11 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        WebView mywebview = findViewById(R.id.my_webview);
-       mywebview.loadUrl("https://www.his.se");
-       //hugo e snygg 123
+        WebSettings webSettings = myWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+
+        myWebView = findViewById(R.id.my_webview);
+        myWebView.setWebViewClient(new WebViewClient()); // Do not open in Chrome!
 
         /*
         * Rename your App. Tip: Values->Strings
