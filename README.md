@@ -17,6 +17,7 @@ Hänvisar till kod nedanför.
     ```
 
 Som även är kopplad till:
+
 ```
 if (id == R.id.action_external_web) {
 showExternalWebPage();
@@ -29,7 +30,9 @@ return true;
     Log.d("==>","Will display internal web page");
     return true;
     }
-    ```
+```
 
-![](htmlscreen.didi.png) 
-hggh
+![](htmlscreen.didi.png)
+
+
+
